@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: .875rem;
+    background-color: #1d2634;
+   
+}
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 50px 0 0; /* Height of navbar */
+    box-shadow: 5px 6px 7px -3px rgba(0, 0, 0, 0.35);
+    background-color: #1d2634;
+    padding: 10px 10px 10px 10px;
+}
+img{
+ width: 50%;
+ height: 20%;
+ margin-top: 20px;
+ padding: 5px;
+ margin-left: 20%;
+ padding: 15px;
+}
+.metirial-symbal{
+   color: aliceblue;
+   font-size: larger;
+   padding: 2px;
+}
+a ion-icon{
+    color: white;
+}
+.card-title {
+    font-size: 1.25rem;
+}
+.sidebar-links{
+    margin-left: 50px;
+}
+/* .sidebar-links :hover{
+    border: 1px solid gray;
+} */
+.container{
+     box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+.container2{
+    box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 0.35);
+    color: aliceblue;
+    /* padding: 10px; */
+}
+.sidebar a{
+  padding: 50px 50px 50px 50px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f4f1f1;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+.sidebar a span:hover{
+    color: cadetblue;
+}
+
+#res{
+    color: #d34040;
+    text-align: center;
+    margin-left: 40%;
+}
+.box{
+    background: rgb(0,98,126);
+    background: linear-gradient(90deg, rgba(0,98,126,1) 0%, rgba(8,93,106,1) 97%);
+
+}

@@ -1,0 +1,68 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1 {
+        font-family: sans-serif;
+        color: black;
+        margin: 20px;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(49,50,51);
+        background: linear-gradient(90deg, rgba(49,50,51,1) 0%, rgba(20,43,43,1) 100%);
+      }
+      h1{
+        color: black;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+      }
+      .container{
+        padding: 5px;
+        background-color: white;
+        width: 20%;
+        height: 45%;
+        text-align: center;
+        box-shadow: 0px 20px 50px rgba(0,0,0,5);  
+        border-radius: 20px;
+      }
+      form{
+        margin: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      form ::placeholder{
+        color: black;
+      }
+      input{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+      }
+      #sbtn{
+        background-color: green;
+        color: white;
+        width: 50%;
+        border: 1px solid white;
+      }
+       #sbtn:hover{
+        background-color: olivedrab;
+       }
+      label{
+        font-size: small;
+      }
+      a{
+        text-decoration: none;
+      }
+      .Create a:hover{
+        color: cornflowerblue;
+      }
+      
+      
+
+

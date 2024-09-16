@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="mei">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            
+            <!-- Main content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="container">
+                <img src="./info-logo.png">
+                </div>
+                 <hr>
+            <div class="container2">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">My Projects</h1>
+               
+                <form class="d-flex">
+               <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" id="sbtn" type="button">Search</button>
+                </form>
+            
+
+                
+                 </div>
+
+            </div>
+
+                <nav id="sidebar" class="col-md-3 col-lg-2  sidebar">
+                    <div class="sidebar-header">
+                     <ul class="sidebar-links">
+                        <li>
+                            <a href="#"><ion-icon name="apps-sharp"></ion-icon><span class="metirial-symbal">
+                                Dashboard
+                            </span></a><br>
+                            <a href="#"><ion-icon name="people-outline"></ion-icon><span class="metirial-symbal">
+                                Teams
+                            </span></a><br>
+                            <a href="#" id="myP"><ion-icon name="hourglass-outline"></ion-icon><span class="metirial-symbal">
+                                My Projects
+                            </span></a><br>
+                            <a href="./createProject.html"><ion-icon name="add-outline"></ion-icon><span class="metirial-symbal">
+                             Create Projects
+                            </span></a><br>
+                            <div class="dropdown">
+                            <a href="#"><ion-icon name="settings-outline"></ion-icon><span class="metirial-symbal">
+                                Settings
+                            </span></a><br>
+                                     
+                            <a href="#"><ion-icon name="person-sharp"></ion-icon><span class="metirial-symbal">
+                                Profile
+                            </span></a><br>
+                            <a href="#"><ion-icon name="information-circle-outline"></ion-icon><span class="metirial-symbal">
+                                Help
+                            </span></a><br>
+                            <a href="./login.html" id="login"><ion-icon name="enter-sharp"></ion-icon><span class="metirial-symbal">
+                                Login
+                            </span></a><br>
+                        </li>
+                     </ul>
+                    </div>
+                </nav>
+                <!-- Add your project details here -->
+                <div class="row " id="c">
+          
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js" type="module"></script>
+    <!-- <script>
+        var body = document.getElementById("mei");
+        var light = document.getElementById("light");
+        var dark = document.getElementById("dark");
+
+
+light.addEventListener("click", function () {
+  body.style.backgroundColor = "white";
+  body.style.color = "black";
+});
+
+dark.addEventListener("click", function () {
+  body.style.backgroundColor = "#1d2634";
+  body.style.color = "#9e9ea4";
+});
+
+    </script> -->
+</body>
+</html>
