@@ -110,6 +110,8 @@ function RetData(){
         pdata = data1
         pdata.shift()
         console.log(pdata)
+        let lg = false
+        let lgdef = true
 
 
         
@@ -222,19 +224,29 @@ function RetData(){
                 if(myp){
 
                     if(!login){
-                        alert('Please Login')
+                        if(lg==false){
+                            alert('Please Login')
+                        }
+                        
+                        lg = true
+                        
                     }
 
                     if(def == 0){
-                        // alert('def0')
-                        const div1 = document.getElementsByClassName('div1')
-                       
 
-                        while(div1.length>0){
-                            
-                            c.removeChild(div1[0])
-            
-                        }
+                        // if(lg == true && lgdef == true){
+                        //     alert('def0')
+                        //     const div1 = document.getElementsByClassName('div1')
+                           
+    
+                        //     while(div1.length>0){
+                                
+                        //         c.removeChild(div1[0])
+                
+                        //     }
+                        //     alert('def finished')
+
+                        // }
                     }
 
                     if(def == 1){
@@ -258,6 +270,7 @@ function RetData(){
             
                         }
                         def = 0
+                        lgdef = false
                     }
 
                 }
@@ -299,7 +312,13 @@ function RetData(){
 
 
 
-                createCard(d.projectName,d.projectDesc,"d",0,0,val,d.id)
+                //   alert('c')
+                
+                if(lg==true && lgdef==true){
+                    
+                }else{
+                    createCard(d.projectName,d.projectDesc,"d",0,0,val,d.id)
+                }
                 
             }
 
