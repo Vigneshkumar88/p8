@@ -257,7 +257,7 @@ function RetData(){
                     }else{
                         def=0
                     }
-                    alert(def)
+                    
                 }
             }else{
 
