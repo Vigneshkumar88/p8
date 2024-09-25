@@ -112,17 +112,23 @@ function RetData(){
         console.log(pdata)
         let lg = false
         let lgdef = true
+        let count3 = 0
+        let match = false
 
 
         
         data1.forEach(d=>{
 
             let count2 = 0
+            count3++
+            console.log(count3)
             if(login&&myp){
 
                 
+                
                 if(userId==d.userId){
                     
+                    match = true
                     if(data1.length==count2){
                         
 
@@ -131,9 +137,21 @@ function RetData(){
                     const div2 = document.getElementsByClassName('div2')
                     if(def == 0){
 
+                        if(h11 == 1){
+                            const h1 = document.getElementsByClassName("h1")
+            
+                            while(h1.length>0){
+                                c.removeChild(h1[0])
+                            }
+                            h11 = 0
+                            
+            
+                        }
+
                         while(div1.length>0){
                             
                             c.removeChild(div1[0])
+                            
             
                         }
                     
@@ -170,10 +188,24 @@ function RetData(){
                         
                           calculatePercentage(total,50)
 
-                    createCard(d.projectName,d.projectDesc,"d",0,0,val,d.id)
+                    createCard(d.projectName,d.projectDesc,"fc",0,0,val,d.id)
+                    
+                    console.log(data1.length)
+
                     }
 
                     if(def == 1){
+
+                        if(h11 == 1){
+                            const h1 = document.getElementsByClassName("h1")
+            
+                            while(h1.length>0){
+                                c.removeChild(h1[0])
+                            }
+                            h11 = 0
+                            
+            
+                        }
 
                         while(div2.length>0){
                             
@@ -214,10 +246,18 @@ function RetData(){
                         
                           calculatePercentage(total,50)
 
-                    createCard(d.projectName,d.projectDesc,"fc",0,0,val,d.id)
+                    createCard(d.projectName,d.projectDesc,"d",0,0,val,d.id)
                     }
 
 
+                }
+                if(count3==data1.length && match==true){
+                    if(def==0){
+                        def=1
+                    }else{
+                        def=0
+                    }
+                    alert(def)
                 }
             }else{
 
